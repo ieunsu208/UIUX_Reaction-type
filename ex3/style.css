@@ -1,0 +1,40 @@
+/* component */
+.tr-03{transition: 0.3s;}
+.tr-05{transition: 0.5s;}
+.tr-07{transition: 0.7s;}
+.container {
+    max-width: 1440px;
+    margin-left: auto; margin-right: auto;
+}
+
+/* 상단바 */
+header {
+    height: 100px;
+    background-color: #333;
+}
+
+/* 메인 콘텐츠 */
+main {
+    height: 100vh;
+}
+/* section1 / card3 */
+.s1-sd3 {
+    background-color: #c5c5c5;
+    padding-top: 100px; padding-bottom: 100px;
+    padding-left: 100px; padding-right: 100px;
+}
+.s1-sd3 > .container {
+    display: flex;
+    gap: 40px;
+}
+.sd3-cd {
+    background-color: #6b8671;
+    height: 500px;
+    flex-grow: 1; flex-basis: 0;
+}
+
+/* 하단바 */
+footer {
+    height: 500px;
+    background-color: #333;
+}
