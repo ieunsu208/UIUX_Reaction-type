@@ -1,19 +1,38 @@
-/* (실무)360사이즈에서 가장 많이 디자인함 */
-/* (포트폴리오)화면이 길어야 예뻐서 320*720 */
-/* 0 ~ 320 */
+/* [1080까지 상자 레이아웃 -> 세로] 1081 ~  */
+
+/* 320 ~ 1080 */
 @media screen and (max-width: 1080px) {
+    .s1-sd3 {
+        padding-left: 20px; padding-right: 20px;
+    }
     .s1-sd3 > .container {
-        flex-wrap: wrap;
+        /* 1080까지 상자 레이아웃 -> 세로 */
+        flex-direction: column;
     }
     .sd3-cd {
-        height: 300px; width: 100%;
+        width: 100%;
+        height: 300px;
+        /* flex-direction: column;으로 세로 정렬이 되었는데, 높이는 고정을 하기 때문에 flex-grow 필요 없음
+        -> 높이를 300px로 고정되어 있기 때문에 flex-grow는 필요 없음*/
+        flex-grow: 0;
+        /* flex-item 전용 너비 */
+        /* width와 flex-basis 둘다 너비를 담당하기 때문에 충돌이 일어날 수 있음
+        그래서 하나만 사용해야 되는데 width를 100%으로 설정 했기 때문에 flex-basis를 auto로 설정 */
         flex-basis: auto;
     }
 }
+
+/* (실무)360사이즈에서 가장 많이 디자인함 */
+/* (포트폴리오)화면이 길어야 예뻐서 320*720 */
+/* 0 ~ 320 */
 @media screen and (max-width: 320px) {
     header {
-    height: 80px;
-    background-color: #7f8b83;
+        height: 80px;
+        background-color: #7f8b83;
+    }
+    .s1-sd3 > .container {
+        /* 1080까지 상자 레이아웃 -> 가로 */
+        flex-direction: row;
     }
     footer {
     height: 210px;
