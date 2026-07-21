@@ -45,6 +45,7 @@ footer {
     display: flex;
     gap: 300px;
 }
+
 .sec01-ex1 {
     width: 500px; height: 500px;
     background-color: antiquewhite;
