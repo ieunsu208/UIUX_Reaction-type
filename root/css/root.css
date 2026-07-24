@@ -1,3 +1,9 @@
 :root {
     --color-background-tertiary: #faf9f5;
+    --color-text-info-dark: #3266ad;
+    --color-text-danger: #B53333;
+    --color-text-success: #265B19;
+
+    --color-text-danger-dark: #EE8884;
+    --color-ring-info: #80AADD;
 }
